@@ -12,7 +12,8 @@ const Signup=()=>{
         fetch('api/signup', {
             method: "POST",
             headers: {
-            'Content-type': 'application/json'
+            'Content-type': 'application/json',
+            "Access-Control-Allow-Origin": "*"
             },
             body: JSON.stringify(values1)
             })
