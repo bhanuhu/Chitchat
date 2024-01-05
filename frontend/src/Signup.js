@@ -16,7 +16,7 @@ const Signup=()=>{
             },
             body: JSON.stringify(values1)
             })
-            .then((response) => response.json())
+            .then((response) =>response.json())
             .then((result) => {
             if(result.Details==="Recieved"){
               setv1(true)
