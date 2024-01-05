@@ -21,6 +21,7 @@ const Sign=()=>{
         },
         body: JSON.stringify(values)
         })
+        .then((response) => response.json())
         .then((result) => {
         if(result==="signedin"){
           console.log("Signin ho gya");
