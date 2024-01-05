@@ -16,16 +16,13 @@ const Signup=()=>{
             },
             body: JSON.stringify(values1)
             })
-            .then((response) =>response.json())
+            .then((response) =>response&& response?.json())
             .then((result) => {
             if(result.Details==="Recieved"){
               setv1(true)
             }
             })
-            .catch((error) => {
-              console.error('Error during signup:', error);
-          });
-      
+            
         setvalues1((values1) => ({  firstname:"",lastname:"",email:"",password:"" }));
       }
       
