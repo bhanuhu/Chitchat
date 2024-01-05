@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:5050/",
+  "proxy": "https://chitchatbackend-ihyo.onrender.com/",
   "name": "chitchat",
   "version": "0.1.0",
   "private": true,
