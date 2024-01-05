@@ -3,7 +3,7 @@ const route=express.Router()
 const mongoose=require('mongoose')
 const Model=require('./schema/abcModel')
 
-route.post("/signup", async (req,res)=>{
+route.post("/api/signup", async (req,res)=>{
     const {email, password ,firstname, lastname}=req.body
     let followingnumber=0,followernumber=0,postnumber=0;
     try{
@@ -19,7 +19,7 @@ route.post("/signup", async (req,res)=>{
     
     // res.status(201).json({msg:"post"})
 })
-route.post("/signin", async (req,res)=>{
+route.post("/api/signin", async (req,res)=>{
     const email = req.body.email
     const password=req.body.password
     console.log(email)

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React from "react";
 import Sign from "./Sign";
 import Signup from "./Signup";
-import { useEffect,useState } from 'react';
 
 
 const Signin=()=>{
