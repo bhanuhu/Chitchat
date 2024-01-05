@@ -23,6 +23,9 @@ const Signup=()=>{
               setv1(true)
             }
             })
+            .catch((error) => {
+              console.error('Error during signup:', error);
+          });
             
         setvalues1((values1) => ({  firstname:"",lastname:"",email:"",password:"" }));
       }
